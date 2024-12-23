@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from models import db, User
 from config import Config
+from werkzeug.urls import url_quote
 
 app = Flask(__name__)
 app.config.from_object(Config)
